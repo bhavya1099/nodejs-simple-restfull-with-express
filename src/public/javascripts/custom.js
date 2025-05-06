@@ -10,6 +10,7 @@ function validateForm(){
 }
 
 function submitSaveForm(){
+    console.log("inside submit save form.");
     if(validateForm()){
         var product = {
             title: $("#title").val(),
