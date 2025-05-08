@@ -6,7 +6,7 @@ productServices.factory('productServices', ['$resource', productServicesFunction
 const URL_ROOT = "http://localhost:3000";
 
 function productServicesFunction($resource) {
-    console.log("inside product service");
+    console.log("inside services function");
     return $resource('http://localhost:3000/api/products/:id', {}, {
         'getAllProducts': {
             method: 'GET'
